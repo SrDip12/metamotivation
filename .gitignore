@@ -9,20 +9,14 @@ dist/
 venv/
 env/
 .env
+.env.*
 *.db
 *.sqlite
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-error.log*
-.expo/
-.expo-shared/
-build/
-*.tgz
+# Backup
+backup/
 
 # Docker
-postgres-data/
 .docker/
 
 # OS

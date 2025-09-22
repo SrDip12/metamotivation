@@ -1,18 +1,34 @@
-# MetaMotivation - Free Version
+# MetaMotivation - Backend API
 
-Aplicacion de metamotivacion para adolescentes
+Backend FastAPI para la aplicacion MetaMotivation desplegado en Railway.
 
-## Estructura del Proyecto
-- `mot_back/` - Backend FastAPI + PostgreSQL
-- `mot_front/` - App React Native 
-- `mot_iac/` - Docker compose para desarrollo local
+## 🚀 En Vivo
+- Backend API: Desplegado automaticamente en Railway
+- Documentacion: /docs
 
-## Deploy en Railway
-Este proyecto esta configurado para desplegarse automaticamente en Railway.
+## 📁 Estructura
+```
+/
+├── app/                 # Codigo FastAPI
+│   ├── main.py         # Aplicacion principal
+│   ├── api/            # Endpoints API
+│   ├── models/         # Modelos de base de datos
+│   └── schemas/        # Esquemas Pydantic
+├── requirements.txt    # Dependencias Python
+├── Dockerfile         # Configuracion Docker
+└── railway.toml       # Configuracion Railway
+```
 
-## Uso
-1. Descargar APK
-2. Instalar en Android
-3. Registrarse y usar la aplicacion
+## 🔧 Endpoints Principales
+- `GET /docs` - Documentacion interactiva
+- `POST /api/v1/login/access-token` - Iniciar sesion
+- `POST /api/v1/users/register` - Registrar usuario
+- `POST /api/v1/check-in/` - Check-in diario de motivacion
+- `GET /api/v1/dashboard/motivation-history` - Historial motivacion
+- `GET /api/v1/questions/` - Cuestionario metamotivacion
 
-Backend corriendo 24/7 en: Railway
+## 📱 App Movil
+El frontend React Native se conecta a esta API para funcionar.
+
+## 🔄 Auto-Deploy
+Cada push a main hace deploy automatico en Railway.
