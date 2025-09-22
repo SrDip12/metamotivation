@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "mot_back/Dockerfile"
+
+[deploy]
+healthcheckPath = "/docs"
+healthcheckTimeout = 300
+restartPolicyType = "never"
